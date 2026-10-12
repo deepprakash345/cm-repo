@@ -1,0 +1,43 @@
+/*
+ * Copyright 2026 Adobe
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.cmp-adaptiveform-starrating[data-cmp-visible="false"] { display: none; }
+.cmp-adaptiveform-starrating__group { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.cmp-adaptiveform-starrating__option { position: relative; cursor: pointer; padding: 0.25rem; }
+.cmp-adaptiveform-starrating__radio { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.cmp-adaptiveform-starrating__star { display: block; width: 2rem; height: 2rem; fill: none; stroke: #333; stroke-width: 1.5; }
+.cmp-adaptiveform-starrating__option[data-filled="true"] .cmp-adaptiveform-starrating__star { fill: #333; }
+.cmp-adaptiveform-starrating__radio:focus + .cmp-adaptiveform-starrating__star,
+.cmp-adaptiveform-starrating__clear:focus,
+.cmp-adaptiveform-starrating__questionmark:focus { outline: 2px solid #005fcc; outline-offset: 2px; }
+.cmp-adaptiveform-starrating__label-container { display: flex; align-items: center; gap: 0.5rem; }
+.cmp-adaptiveform-starrating__questionmark { width: 2rem; height: 2rem; border: 1px solid #333; border-radius: 50%; background: #fff; color: #333; cursor: pointer; }
+.cmp-adaptiveform-starrating__questionmark::before { content: "?"; font-weight: bold; }
+.cmp-adaptiveform-starrating__label[data-cmp-visible="false"],
+.cmp-adaptiveform-starrating__shortdescription[data-cmp-visible="false"],
+.cmp-adaptiveform-starrating__longdescription[data-cmp-visible="false"] { display: none; }
+.cmp-adaptiveform-starrating__clear { margin-top: 0.5rem; }
+.cmp-adaptiveform-starrating__clear[hidden] { display: none; }
+.cmp-adaptiveform-starrating__errormessage { color: #a40000; }
+.cmp-adaptiveform-starrating[data-cmp-enabled="false"] .cmp-adaptiveform-starrating__option,
+.cmp-adaptiveform-starrating[data-cmp-readonly="true"] .cmp-adaptiveform-starrating__option { cursor: default; }
+
+@media (forced-colors: active) {
+    .cmp-adaptiveform-starrating__star { stroke: CanvasText; }
+    .cmp-adaptiveform-starrating__option[data-filled="true"] .cmp-adaptiveform-starrating__star { fill: CanvasText; }
+    .cmp-adaptiveform-starrating__radio:focus + .cmp-adaptiveform-starrating__star,
+    .cmp-adaptiveform-starrating__clear:focus,
+    .cmp-adaptiveform-starrating__questionmark:focus { outline-color: Highlight; }
+}

@@ -1,0 +1,43 @@
+# Existing local tooling exclusions
+.aio
+scripts/*
+
+# Maven build output
+target/
+
+# ZIP archives
+*.[zZ][iI][pP]
+
+# Logs, including rotated and compressed logs
+logs/
+*.[lL][oO][gG]
+*.[lL][oO][gG].*
+
+# npm dependencies and locally installed Node.js runtimes
+node_modules/
+node/
+node.exe
+
+# Generated frontend output
+/ui.frontend/dist/
+
+# Cypress reports and recordings
+/ui.tests/test-module/cypress/results/
+/ui.tests/test-module/cypress/screenshots/
+/ui.tests/test-module/cypress/videos/
+
+# Local environment secrets (keep example files versioned)
+.env
+.env.*
+!.env.example
+
+# IDE and operating-system files
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Tool caches and coverage output
+.cache/
+.eslintcache
+coverage/

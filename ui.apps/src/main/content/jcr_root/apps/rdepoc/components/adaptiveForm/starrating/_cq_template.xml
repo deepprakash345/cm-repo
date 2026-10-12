@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Star Rating"
+    fieldType="number-input"
+    type="integer"
+    step="{Long}1"
+    minimum="{Long}1"
+    maximum="{Long}5"/>

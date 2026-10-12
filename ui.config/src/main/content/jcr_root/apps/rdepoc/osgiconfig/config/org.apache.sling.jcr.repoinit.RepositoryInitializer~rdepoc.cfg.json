@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/rdepoc",
+        "create path (nt:unstructured) /content/dam/rdepoc/jcr:content",
+        "set properties on /content/dam/rdepoc/jcr:content\n  set cq:conf{String} to /conf/rdepoc\n  set jcr:title{String} to \"rdepoc\"\nend"
+    ]
+}

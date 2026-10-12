@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content jcr:primaryType="cq:PageContent"
+        jcr:title="Star Rating Example"
+        cq:template="/conf/rdepoc/settings/wcm/templates/blank-af-v2"
+        cq:conf="/conf/rdepoc"
+        sling:resourceType="rdepoc/components/adaptiveForm/page">
+        <guideContainer jcr:primaryType="nt:unstructured"
+            sling:resourceType="rdepoc/components/adaptiveForm/formcontainer"
+            fd:version="2.1" fieldType="form" name="starRatingExample"
+            jcr:title="Star Rating Example">
+            <optionalRating jcr:primaryType="nt:unstructured"
+                sling:resourceType="rdepoc/components/adaptiveForm/starrating"
+                fieldType="number-input" type="integer" name="optionalRating"
+                jcr:title="Rate your experience" maximum="{Long}5"/>
+            <requiredRating jcr:primaryType="nt:unstructured"
+                sling:resourceType="rdepoc/components/adaptiveForm/starrating"
+                fieldType="number-input" type="integer" name="requiredRating"
+                jcr:title="Seven-star rating" maximum="{Long}7" required="{Boolean}true"/>
+            <readonlyRating jcr:primaryType="nt:unstructured"
+                sling:resourceType="rdepoc/components/adaptiveForm/starrating"
+                fieldType="number-input" type="integer" name="readonlyRating"
+                jcr:title="Read-only rating" default="{Long}3" readOnly="{Boolean}true"/>
+            <disabledRating jcr:primaryType="nt:unstructured"
+                sling:resourceType="rdepoc/components/adaptiveForm/starrating"
+                fieldType="number-input" type="integer" name="disabledRating"
+                jcr:title="Disabled rating" default="{Long}2" enabled="{Boolean}false"/>
+        </guideContainer>
+    </jcr:content>
+</jcr:root>

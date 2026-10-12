@@ -1,0 +1,15 @@
+{
+  ":type": "rdepoc/components/adaptiveForm/starrating",
+  "fieldType": "number-input",
+  "type": "integer",
+  "step": 1,
+  "name": "experienceRating",
+  "label": { "value": "Experience rating" },
+  "minimum": 1,
+  "maximum": 7,
+  "default": 3,
+  "required": true,
+  "readOnly": false,
+  "enabled": true,
+  "visible": true
+}

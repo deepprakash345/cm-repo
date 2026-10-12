@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="nt:unstructured" jcr:title="Star Rating">
+    <items jcr:primaryType="nt:unstructured">
+        <field jcr:primaryType="nt:unstructured" jcr:title="Star Rating" id="af2_starrating"
+            longTitle="Star Rating" propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common">
+            <items jcr:primaryType="nt:unstructured">
+                <widgetAndText jcr:primaryType="nt:unstructured" jcr:title="Star Rating"
+                    id="af2_starratingwidgetandtext" longTitle="Star Rating"
+                    cssSelector=".cmp-adaptiveform-starrating"
+                    propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common">
+                    <items jcr:primaryType="nt:unstructured">
+                        <labelContainer jcr:primaryType="nt:unstructured" jcr:title="Label Container"
+                            id="af2_starratinglabelcontainer" longTitle="Label Container"
+                            cssSelector=".cmp-adaptiveform-starrating__label-container"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common"/>
+                        <label jcr:primaryType="nt:unstructured" jcr:title="Label"
+                            id="af2_starratinglabel" longTitle="Label"
+                            cssSelector=".cmp-adaptiveform-starrating__label"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common"/>
+                        <stars jcr:primaryType="nt:unstructured" jcr:title="Stars"
+                            id="af2_starratingstars" longTitle="Stars"
+                            cssSelector=".cmp-adaptiveform-starrating__star"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common">
+                            <states jcr:primaryType="nt:unstructured">
+                                <focus jcr:primaryType="nt:unstructured" jcr:title="Focus"
+                                    cssSelector=".cmp-adaptiveform-starrating__radio:focus + .cmp-adaptiveform-starrating__star"/>
+                                <selected jcr:primaryType="nt:unstructured" jcr:title="Filled"
+                                    cssSelector=".cmp-adaptiveform-starrating__option[data-filled='true'] .cmp-adaptiveform-starrating__star"/>
+                            </states>
+                        </stars>
+                        <help jcr:primaryType="nt:unstructured" jcr:title="Help Icon"
+                            id="af2_starratinghelpicon" longTitle="Help Icon"
+                            cssSelector=".cmp-adaptiveform-starrating__questionmark"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common"/>
+                        <shortDescription jcr:primaryType="nt:unstructured" jcr:title="Short Description"
+                            id="af2_starratingshortdescription" longTitle="Short Description"
+                            cssSelector=".cmp-adaptiveform-starrating__shortdescription"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common"/>
+                        <longDescription jcr:primaryType="nt:unstructured" jcr:title="Long Description"
+                            id="af2_starratinglongdescription" longTitle="Long Description"
+                            cssSelector=".cmp-adaptiveform-starrating__longdescription"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common"/>
+                        <errorMessage jcr:primaryType="nt:unstructured" jcr:title="Error Message"
+                            id="af2_starratingerrormessage" longTitle="Error Message"
+                            cssSelector=".cmp-adaptiveform-starrating__errormessage"
+                            propertySheet="/mnt/overlay/fd/af/components/stylePropertySheet/common"/>
+                    </items>
+                </widgetAndText>
+            </items>
+        </field>
+    </items>
+</jcr:root>

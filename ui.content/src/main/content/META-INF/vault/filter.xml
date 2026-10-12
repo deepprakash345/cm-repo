@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/rdepoc" mode="merge"/>
+    <filter root="/content/rdepoc" mode="merge"/>
+    <filter root="/content/dam/rdepoc" mode="merge">
+        <exclude pattern="/content/dam/rdepoc(/.*)?"/>
+        <include pattern="/content/dam/rdepoc/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/rdepoc/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/rdepoc" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-themes/rdepoc" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-fdm/rdepoc" mode="merge"/>
+    <filter root="/content/dam/rdepoc/sample_logo.png" mode="merge"/>
+    <filter root="/content/dam/rdepoc/sample_terms.png" mode="merge"/>
+    <filter root="/content/dam/rdepoc/wknd_logo.png" mode="merge"/>
+</workspaceFilter>

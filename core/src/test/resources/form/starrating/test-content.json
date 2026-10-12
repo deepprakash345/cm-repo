@@ -1,0 +1,29 @@
+{
+  "rating": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "rdepoc/components/adaptiveForm/starrating",
+    "id": "rating",
+    "name": "experienceRating",
+    "jcr:title": "Experience rating",
+    "fieldType": "number-input",
+    "maximum": 7,
+    "default": 3,
+    "visible": true,
+    "enabled": true,
+    "required": true,
+    "readOnly": false
+  },
+  "empty": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "rdepoc/components/adaptiveForm/starrating",
+    "name": "optionalRating"
+  },
+  "readonly": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "rdepoc/components/adaptiveForm/starrating",
+    "name": "readonlyRating",
+    "readOnly": true,
+    "enabled": false,
+    "visible": false
+  }
+}
